@@ -1,6 +1,6 @@
 
 # openai-ci-shell
-**A Wildly Inefficient and Expensive Cloud Shell needlessly wrapped in AI**
+**A Wildly Inefficient and Expensive Cloud Shell needlessly wrapped in AI**\
 Did you ever want a random remote shell to a system? Using the OpenAI Assistants SDK and the "Code Interpreter" plugin built-in, now anyone can have their own linux shell within an Ubuntu container that runs on OpenAI's "Untrusted" Kubernetes cluster. 
 
 ![Screenshot in action](/screenshot.gif)
