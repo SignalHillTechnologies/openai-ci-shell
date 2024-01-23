@@ -4,7 +4,7 @@
 \
 \
 ![Screenshot in action](/screenshot.gif)\
-Did you ever want a random remote shell to a system? Using the OpenAI Assistants SDK and the "Code Interpreter" plugin built-in, now anyone can have their own linux shell within an Ubuntu container that runs on OpenAI's "Untrusted" Kubernetes cluster. 
+Did you ever want a random remote shell to a system? Using the OpenAI Assistants SDK and the use of the "Code Interpreter", now anyone can have their own linux shell within an Ubuntu container that runs on OpenAI's "Untrusted" Kubernetes cluster. 
 # About
 OpenAI made a bold decision to allow the use of ephemeral containers to plugin directly to AI generated output. This allows you to suggest python code that will run inline with your chat session, and for the most part it works pretty great. This shell just bypasses the use of the chat interface to perform that interaction.
 
