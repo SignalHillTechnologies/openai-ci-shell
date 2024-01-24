@@ -55,7 +55,7 @@ def interact_with_openai():
     )
     # Create an assistant run and let's chat with em
     while True:
-        user_input = input("OpenAIShell[" + PWD + "]#> ")
+        user_input = input("OpenAIShell[" + PWD + "]$> ")
         if user_input.lower() in ['exit', 'quit']:
             assistant = client.beta.assistants.delete(
                 assistant_id=assistant.id
