@@ -30,14 +30,14 @@ That being said, it's possible that abuse of this utility might violate your ter
 - No support for uploading and downloading files but it's definitely possible within chat, so could be possible at a later date
 - Despite output coming from the code interpreter, it's still parsed and tokenized by the AI in the format currently being read. This means that commands that return a large amount of text may take a moment to actually return data. It also may be truncated, or warped arbitrarily. It's technically possible to get the output directly from the Code Interpreter, but I haven't investigated too closely
 - Code interpreter has a timeout on commands that run a long period of time, so bear that in mind for anything with a large amount of output as well
-
+- Pipes and redirects do not work correctly
+- 
 # Funny quirks
 - Since the shell interpreter is being parsed by the AI, you can also issue commands like "Use the psutils python library to output the equivalent of netstat -tan" for commands that don't exist. 
 - If you don't get a response back, try again. 
 - Error handling is a bit ramshackle, and prone to "interpretation"
 - Sometimes typos will get autocorrected for you -- again, this is not a strict shell interpreter but AI is converting your inputs to python code on the backend.
 - Using "cd" commands are a dreadful hack, it kinda works, but sometimes doesn't. If something isn't working right, you're better off just issuing it to the directory you have in mind "ls /etc" for example.
-- Pipes and redirects do not work correctly 
 
 # How do I know this isn't just fake AI generated output mimicking a shell?
 - You can gauge the amount of determinism yourself from interactions on the filesystem but a few notes:
