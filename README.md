@@ -28,7 +28,8 @@ That being said, it's possible that abuse of this utility might violate your ter
 # Known Limitations
 - Many commands you may be used to in linux aren't installed on the container. In many cases you can actually use the Code Interpreter to approximate that functionality for you using python libraries
 - No support for uploading and downloading files but it's definitely possible within chat, so could be possible at a later date
-- Despite output coming from the code interpreter, it's still parsed and tokenized by the AI in the format currently being read. This means that commands that return a large amount of text may take a moment to actually return data. It also may be truncated, or warped arbitrarily. It's technically possible to get the output directly from the Code Interpreter, but I haven't investigated too closely.
+- Despite output coming from the code interpreter, it's still parsed and tokenized by the AI in the format currently being read. This means that commands that return a large amount of text may take a moment to actually return data. It also may be truncated, or warped arbitrarily. It's technically possible to get the output directly from the Code Interpreter, but I haven't investigated too closely
+- Code interpreter has a timeout on commands that run a long period of time, so bear that in mind for anything with a large amount of output as well
 
 # Funny quirks
 - Since the shell interpreter is being parsed by the AI, you can also issue commands like "Use the psutils python library to output the equivalent of netstat -tan" for commands that don't exist. 
