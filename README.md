@@ -13,7 +13,7 @@ On the backend, the Code Interpreter listens as a service on port 8080. When a r
 # Is this a vulnerability?
 Although this might look like a vulnerability, and operates identically to a remote shell, there is no vulnerability being taken advantage of-- this is just authorized use of the current code sandbox. The shell interface still uses the approved OpenAI SDK and a little prompt wizardry to provide a shell-like interface. 
 
-**To be clear though**: You are running linux commands on a remote linux system. Although being parsed through the AI chat interface, it is not hallucinated generative text output, but instead code being run on a remote container. 
+**To be clear though**: You are running linux commands on a remote linux system. Although being parsed through the AI chat interface, it is not hallucinated generative text output, but instead code being run on a remote container. This container contains an entire linux filesystem including the necessary components to handle inputs into Jupyter Notebook. Although not supported inline with the shell, you can also download and upload these files as well.
 
 Other vulnerability researchers (including those participating in the bug bounty program) have availed themselves to attempt to break out of the sandbox using similar methods. This just eliminates the chat based abstraction.
  
