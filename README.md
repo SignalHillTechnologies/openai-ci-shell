@@ -36,7 +36,8 @@ That being said, it's possible that abuse of this utility might violate your ter
 - If you don't get a response back, try again. 
 - Error handling is a bit ramshackle, and prone to "interpretation"
 - Sometimes typos will get autocorrected for you -- again, this is not a strict shell interpreter but AI is converting your inputs to python code on the backend.
-- Using "cd" commands are a dreadful hack, it kinda works, but sometimes doesn't. If something isn't working right, you're better off just issuing it to the directory you have in mind "ls /etc" for example. 
+- Using "cd" commands are a dreadful hack, it kinda works, but sometimes doesn't. If something isn't working right, you're better off just issuing it to the directory you have in mind "ls /etc" for example.
+- Pipes and redirects do not work correctly 
 
 # How do I know this isn't just fake AI generated output mimicking a shell?
 - You can gauge the amount of determinism yourself from interactions on the filesystem but a few notes:
