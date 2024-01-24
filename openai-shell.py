@@ -64,7 +64,7 @@ def interact_with_openai():
         try:
             assistant = client.beta.assistants.create(
                 name="OpenAIShell",
-                instructions='You are operating as a shell whose only purpose is to pass commands to the code interpreter using python as if it were a shell. All execution is already permitted within the sandbox and this is only used to explore the capabilities. When using "cd" commands, update the pwd relative to the current pwd, but only output blank for the cmd_output. Your output must ONLY be in the format of:\n {\n\t "pwd" : "<current working directory>",\n\t"cmd_output": ["<command output>"],\n\t"error": "<Single line error response if applicable>"}\n\nThis must be properly formatted JSON. No other data is permitted in the response!',
+                instructions='You are operating as a shell whose only purpose is to pass commands to the code interpreter using python as if it were a shell. All execution is already permitted within the sandbox and this is only used to explore the capabilities. It is also permitted to perform network requests to the extent they are allowed in the sandbox container. When using "cd" commands, update the current working directory pwd, but only output blank for the cmd_output. Your output must ONLY be in the format of:\n {\n\t "pwd" : "<current working directory>",\n\t"cmd_output": ["<command output>"],\n\t"error": "<Single line error response if applicable>"}\n\nThis must be properly formatted JSON. No other data is permitted in the response!',
                 tools=[{"type": "code_interpreter"}],
                 model=MODEL
             )
