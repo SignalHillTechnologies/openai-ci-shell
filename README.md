@@ -24,6 +24,7 @@ That being said, it's possible that abuse of this utility might violate your ter
  1. Obtain an OpenAI API account and key 
  2. Clone or download this repo
  3. Run: pip install -r requirements.txt
+ 4. Set your environment variable OPENAI_API_KEY to your OpenAI API key
  4. python3 shell.py
 
 # Disclaimer
