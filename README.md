@@ -25,7 +25,7 @@ That being said, it's possible that abuse of this utility might violate your ter
  2. Clone or download this repo
  3. Run: pip install -r requirements.txt
  4. Set your environment variable OPENAI_API_KEY to your OpenAI API key
- 4. python3 shell.py
+ 4. python3 openai-shell.py
 
 # Known Limitations
 - Many commands you may be used to in linux aren't installed on the container. In many cases you can actually use the Code Interpreter to approximate that functionality for you using python libraries, but not directly within the shell. 
